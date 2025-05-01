@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="#51BD57"
     tools:context=".MainActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:contentDescription="pfp"
-        android:src="@drawable/img_6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/RoundedImage"
+        android:src="@drawable/img_8"
         tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:src="@drawable/img_9"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp" />
+
     <TextView
         android:id="@+id/t1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Card"
-        android:textColor="@color/white"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="296dp"
+        android:text="Kotlin dasturlash tili"
+        android:textColor="@color/black"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -34,338 +43,15 @@
         android:id="@+id/t2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simple and easy to use app"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="228dp"
+        android:background="#FFFFFF"
+        android:text="www.geeksforgeeks.org/textview-in-kotlin/"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/t1"
-        tools:ignore="HardcodedText"/>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="24dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FFFFFF"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/c2"
-        app:layout_constraintTop_toBottomOf="@+id/t2">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img"
-                android:contentDescription="Image" />
-            <TextView
-                android:id="@+id/titleText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Text"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
-            <TextView
-                android:id="@+id/descText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="24dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#FFFFFF"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/t2">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img_1"
-                android:contentDescription="Image" />
-
-            <TextView
-                android:id="@+id/titleText1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Adderss"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
-
-            <TextView
-                android:id="@+id/descText1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="24dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FFFFFF"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/c4"
-        app:layout_constraintTop_toBottomOf="@id/c1">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img_2"
-                android:contentDescription="Image" />
-
-            <TextView
-                android:id="@+id/titleText2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Character"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
-
-            <TextView
-                android:id="@+id/descText2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c4"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="24dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#FFFFFF"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/c2">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img_3"
-                android:contentDescription="Image" />
-
-            <TextView
-                android:id="@+id/titleText3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bank card"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
-
-            <TextView
-                android:id="@+id/descText3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c5"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="24dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#FFFFFF"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintTop_toBottomOf="@id/c4">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img_5"
-                android:contentDescription="Image" />
-
-            <TextView
-                android:id="@+id/titleText4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logistics"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
-
-            <TextView
-                android:id="@+id/descText4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c6"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="24dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="88dp"
-        android:backgroundTint="#FFFFFF"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toStartOf="@id/c5"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintTop_toBottomOf="@id/c3">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img_4"
-                android:contentDescription="Image" />
-
-            <TextView
-                android:id="@+id/titleText5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
-
-            <TextView
-                android:id="@+id/descText5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/c7"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="1dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/img_7"
-                android:layout_marginStart="15dp"
-                android:contentDescription="Image" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginStart="10dp"
-                >
-                <TextView
-                    android:id="@+id/titleText6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Settings"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:layout_marginTop="8dp"/>
-
-                <TextView
-                    android:id="@+id/descText6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Description"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp"/>
-            </LinearLayout>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
+        tools:ignore="HardcodedText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
