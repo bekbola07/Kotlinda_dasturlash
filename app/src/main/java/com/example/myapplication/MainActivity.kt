@@ -20,10 +20,5 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val e1 = findViewById<EditText>(R.id.e1)
-        val t1 = findViewById<TextView>(R.id.t1)
-        e1.addTextChangedListener {
-            t1.text=e1.text
-        }
     }
 }
